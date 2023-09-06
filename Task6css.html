@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task 4 css</title>
+<style>
+    form {
+        border: 3px solid #f1f1f1;
+        padding: 300px;
+        font-family: Arial;
+      }
+      
+    span {
+        margin: 0px 200px;
+    }
+    div{
+        margin-left: 150px;
+    }
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-weight: bolder;
+      }
+      
+      button {
+        background-color: #66af5b;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      button:hover {
+        opacity: 0.8;
+      }
+      
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #e24e42;
+        border-radius: 5px;
+      }
+      
+      .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+      }
+      
+      img.avatar {
+        width: 40%;
+        border-radius: 50%;
+      }
+      
+      .container {
+        padding: 16px;
+      }
+      
+      span.psw {
+        float: right
+        padding-top: 16px;
+      }
+      
+      @media screen and (max-width: 50px) {
+        span.psw {
+          display: block;
+          float: none;
+        }
+        .cancelbtn {
+          width: 50%;
+          border-radius: 5px;
+        }
+      }
+</style>
+</head>
+<body margin-left="10px">
+    <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="log.png" alt="Avatar" class="avatar" height="300px" width="300px">
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <br>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+            <br>
+          <label for="psw"><b>Password</b></label>
+          <br>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit">Login</button>
+          <br>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw"><a href="#" color>Forgot password?</a></span>
+        </div>
+      </form>
+</body>
+</html>
